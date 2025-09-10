@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>HTML basics Demo</Title>
+        <style>
+            p {
+                color: green;
+            }
+               table,
+               th,
+               td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 1em;
+                margin: 1em;
+               }
+            .header{
+                display: flex;
+                background-color: darkgreen;
+                color: white;
+
+                padding: 0 0 0 0.5vw;
+                gap: 1vw;
+                justify-content: center;
+                flex-wrap: wrap;
+
+            }
+            .item1 {
+                flex: 0 0 auto;
+                width: fit-content;
+
+            }
+
+            .item2 {
+                flex: 0 0 auto;
+            }
+        </style>
+        <link
+        rel="stylesheet"
+        href="style.css">
+    </head>
+
+    <body>
+         <div class="header">
+              <!--<h1 style="color:blue; text-align: center">Welcome to <span id="highlight">HTML</span></h1> -->
+              <div class="item1">
+                <h1>HTML</h1>
+              </div>
+              <div class="item2">
+                <h1>CSS</h1>
+              </div>
+         </div>
+        
+        <p> The concepts covered under this tutorial include:</p>
+        <ul>
+            <li>Introduction to HTML</li>
+            <li>HTML Elements and Tags</li>
+        </ul>
+
+        <p>This is a paragraph element. <b> HTML </b> uses tags to <i> mark up </i> content.</p>
+        <imgsrc="data:image/png;base64,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" alt=""HTML Logo" />
+         <a href="https://www.w3schools.com/html/">Learn more about HTML</a>
+
+        <a href ="./Demo-ICT\next.html">Next Page</a>
+
+        
+        <table>
+            <caption>HTML Table Demo</caption>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>Defines a paragraph</td>
+            </tr>
+            <tr>
+                <td>h1 to h6</td>
+                <td>Defines HTML headings</td>
+            </tr>
+        </table>
+        <a href ="form.html">HTML form Demo</a>
+
+    </body>
+</html>
